@@ -19,7 +19,7 @@ const myMessage = `I hacked you ❤️`;
 app.post("/test", (req, res) => {
   const url = "https://ngl.link/api/submit";
   const payload = {
-    username: "bonsaisgt",
+    username: "<username>",
     question: myMessage,
     deviceId: "024495e7-d669-2a4b-vd32-1476d9b93771",
     gameSlug: "",
@@ -35,7 +35,7 @@ app.post("/test", (req, res) => {
       "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
       Origin: "https://ngl.link",
       Pragma: "no-cache",
-      Referer: "https://ngl.link/bonsaisgt",
+      Referer: "https://ngl.link/<username>",
       "Sec-Fetch-Dest": "empty",
       "Sec-Fetch-Mode": "cors",
       "Sec-Fetch-Site": "same-origin",
